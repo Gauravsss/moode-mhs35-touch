@@ -1,6 +1,15 @@
 #!/bin/bash
 set -e
 
+echo "=== Step 0: Ensure git is installed ==="
+if ! command -v git >/dev/null 2>&1; then
+    sudo apt update
+    sudo apt install -y git
+fi
+
+echo "=== Step 0b: Install evtest (for touch verification) ==="
+sudo apt install -y evtest
+
 echo "=== Step 1: Enable SPI ==="
 sudo raspi-config nonint do_spi 0
 
