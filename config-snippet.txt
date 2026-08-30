@@ -1,0 +1,2 @@
+dtparam=spi=on
+dtoverlay=mhs35,rotate=90
