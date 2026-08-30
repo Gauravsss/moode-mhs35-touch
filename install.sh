@@ -30,6 +30,7 @@ echo "=== Step 5: Xorg configs ==="
 sudo mkdir -p /etc/X11/xorg.conf.d
 sudo cp xorg/99-fbdev.conf /etc/X11/xorg.conf.d/99-fbdev.conf
 sudo cp xorg/40-touchscreen.conf /etc/X11/xorg.conf.d/40-touchscreen.conf
+sudo cp xorg/10-serverflags.conf /etc/X11/xorg.conf.d/10-serverflags.conf
 
 echo "=== Step 6: systemd override for boot race condition ==="
 sudo mkdir -p /etc/systemd/system/localdisplay.service.d
