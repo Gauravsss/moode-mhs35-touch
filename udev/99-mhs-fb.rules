@@ -1,0 +1,1 @@
+SUBSYSTEM=="graphics", KERNEL=="fb*", ATTR{name}=="fb_ili9486", SYMLINK+="fb_mhs"
