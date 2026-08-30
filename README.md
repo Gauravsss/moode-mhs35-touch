@@ -6,6 +6,7 @@ keeping HDMI as the primary display.
 
 ## Usage
 
+sudo apt update && sudo apt install -y git
 git clone https://github.com/Gauravsss/moode-mhs35-touch.git
 cd moode-mhs35-touch
 chmod +x install.sh
