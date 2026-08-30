@@ -23,3 +23,16 @@ sudo evtest
 - Raspberry Pi 5, 1GB RAM
 - moOde Audio 10.3.3
 - GoodTFT MHS-3.5inch SPI display (ILI9486 panel, XPT2046 touch controller)
+
+## Re-running after updates
+
+If you pull future changes to this repo:
+
+git pull
+chmod +x install.sh
+./install.sh
+sudo reboot
+
+install.sh is idempotent — safe to re-run any time (it only appends
+config.txt lines if missing, and overwrites config files with the repo's
+version each time).
